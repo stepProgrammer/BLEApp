@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <ImageView
+        p1:id="@+id/Image"
+        p1:layout_width="48dp"
+        p1:layout_height="48dp"
+        p1:padding="5dp"
+        p1:src="@drawable/icon"
+        p1:layout_alignParentLeft="true"
+        p1:layout_alignBottom="@+id/Text" />
+    <LinearLayout
+        p1:id="@+id/Text"
+        p1:orientation="vertical"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:paddingLeft="10dip">
+        <TextView
+            p1:id="@+id/Text1"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:textColor="#FF7F3300"
+            p1:textSize="20dip"
+            p1:textStyle="italic" />
+        <TextView
+            p1:id="@+id/Text2"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:textSize="14dip"
+            p1:textColor="#FF267F00"
+            p1:paddingLeft="100dip" />
+    </LinearLayout>
+    <TextView
+        p1:text="Показания"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView2"
+        p1:layout_below="@+id/Text" />
+    <TextView
+        p1:text="Дата"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView3"
+        p1:layout_below="@+id/textView2" />
+    <TextView
+        p1:text="21.02.2017"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_alignRight="@id/textView3"
+        p1:id="@+id/textView4"
+        p1:layout_toRightOf="@id/textView3" />
+    <TextView
+        p1:text="Значение:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView5"
+        p1:layout_below="@+id/textView3" />
+    <TextView
+        p1:text="2115"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_alignRight="@id/textView5"
+        p1:id="@+id/textView6"
+        p1:layout_toRightOf="@id/textView3" />
+    <Button
+        p1:text="Предыдущий"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/textView5"
+        p1:id="@+id/button1" />
+</RelativeLayout>

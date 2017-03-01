@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Buildings">Список зданий</string>
+  <string name="Meters">Список счетчиков</string>
+  <string name="Statistics">Статистика</string>
+  <string name="Beacons">Ближайшие счётчики</string>
+    <string name="ApplicationName">BLEApp</string>
+  <string name="DbFileName">bleappv02.db</string>
+</resources>

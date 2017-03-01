@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <TextView
+        p1:text="Название"
+        p1:layout_marginTop="10dp"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:id="@+id/textView1" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textView1"
+        p1:layout_alignBottom="@+id/textView1"
+        p1:id="@+id/editText1" />
+    <TextView
+        p1:text="Тип"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView1"
+        p1:id="@+id/textView2" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView2"
+        p1:layout_toRightOf="@id/textView2"
+        p1:id="@+id/editText2" />
+    <ImageView
+        p1:layout_width="95.0dp"
+        p1:layout_height="95.0dp"
+        p1:layout_below="@id/editText2"
+        p1:layout_alignParentRight="true"
+        p1:layout_alignBottom="@+id/textView5"
+        p1:id="@+id/meterImage" />
+    <TextView
+        p1:text="Этаж"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView2"
+        p1:id="@+id/textView3" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView3"
+        p1:layout_toRightOf="@id/textView3"
+        p1:layout_toStartOf="@id/meterImage"
+        p1:id="@+id/editText3"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Подъезд"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView3"
+        p1:id="@+id/textView4" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView4"
+        p1:layout_toRightOf="@id/textView4"
+        p1:layout_toStartOf="@id/meterImage"
+        p1:id="@+id/editText4"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Номер квартиры"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView4"
+        p1:id="@+id/textView5" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView5"
+        p1:layout_toRightOf="@id/textView5"
+        p1:layout_toStartOf="@id/meterImage"
+        p1:id="@+id/editText5"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Маяк"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView5"
+        p1:id="@+id/beaconText" />
+    <TextView
+        p1:text="UUID"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/beaconText"
+        p1:id="@+id/textView6" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView6"
+        p1:layout_toRightOf="@id/textView6"
+        p1:id="@+id/editText6"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Major"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView6"
+        p1:id="@+id/textView7" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView7"
+        p1:layout_toRightOf="@id/textView7"
+        p1:id="@+id/editText7"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Minor"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView7"
+        p1:id="@+id/textView8" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView8"
+        p1:layout_toRightOf="@id/textView8"
+        p1:id="@+id/editText8"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Дом"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/editText8"
+        p1:id="@+id/buildingText" />
+    <TextView
+        p1:text="Адрес"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/buildingText"
+        p1:id="@+id/textView9" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView9"
+        p1:layout_toRightOf="@id/textView9"
+        p1:id="@+id/editText9" />
+    <TextView
+        p1:text="Широта"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView9"
+        p1:id="@+id/textView10" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView10"
+        p1:layout_toRightOf="@id/textView10"
+        p1:id="@+id/editText10"
+        p1:inputType="numberDecimal" />
+    <TextView
+        p1:text="Долгота"
+        p1:layout_width="95.0dp"
+        p1:layout_height="32.0dp"
+        p1:layout_below="@+id/textView10"
+        p1:id="@+id/textView11" />
+    <EditText
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignBottom="@+id/textView11"
+        p1:layout_toRightOf="@id/textView11"
+        p1:id="@+id/editText11"
+        p1:inputType="numberDecimal" />
+    <Button
+        p1:text="Сохранить"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView11"
+        p1:id="@+id/button1" />
+</RelativeLayout>

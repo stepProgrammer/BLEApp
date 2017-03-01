@@ -1,0 +1,3 @@
+[submodule "xamarin-android-ibeacon-service"]
+	path = xamarin-android-ibeacon-service
+	url = https://github.com/chrisriesgo/xamarin-android-ibeacon-service.git

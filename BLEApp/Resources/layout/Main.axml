@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    tools:actionBarNavMode="list">
+    <ImageView
+        android:src="@drawable/ble"
+        android:layout_width="match_parent"
+        android:layout_height="157.0dp"
+        android:id="@+id/imageView1" />
+    <TextView
+        android:text="Учет показаний счетчиков"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="55.0dp"
+        android:layout_marginTop="20px" />
+    <Button
+        android:text="@string/Buildings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingsButton" />
+    <Button
+        android:text="@string/Beacons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BeaconsButton" />
+    <Button
+        android:text="@string/Statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStatistics" />
+</LinearLayout>
