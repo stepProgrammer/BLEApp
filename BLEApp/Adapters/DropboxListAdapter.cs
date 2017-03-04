@@ -12,19 +12,18 @@ using Android.Widget;
 using BLEApp.Models;
 namespace BLEApp.Adapters
 {
-    class MetersAdapter : BaseAdapter<Meter>
+    class DropboxListAdapter : BaseAdapter<string>
     {
-        List<Meter> items;
 
         Activity context;
-        public MetersAdapter(Activity context, List<Meter> items) : base()
+        List<string> items;
+        public DropboxListAdapter(Activity context, List<string> items) : base()
         {
             this.context = context;
             this.items = items;
         }
 
-
-        public override Meter this[int position]
+        public override string this[int position]
         {
             get
             {
@@ -49,7 +48,7 @@ namespace BLEApp.Adapters
             items.Clear();
             this.NotifyDataSetChanged();
         }
-        public void Insert(int index, Meter item)
+        public void Insert(int index, string item)
         {
             items.Insert(index, item);
         }
@@ -57,17 +56,15 @@ namespace BLEApp.Adapters
         {
             View view = convertView; // re-use an existing view, if one is available
             if (view == null) // otherwise create a new one
-                view = context.LayoutInflater.Inflate(Resource.Layout.metersLayout, null);
-            view.FindViewById<TextView>(Resource.Id.Text1).Text =items[position].meter_name;
-            view.FindViewById<TextView>(Resource.Id.Text2).Text = items[position].meter_description;
-            view.FindViewById<ImageView>(Resource.Id.Image).SetImageResource(parent.Resources.GetIdentifier(items[position].meter_photo.Split('.')[0], "drawable", "BLEApp.BLEApp"));
+                view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
+            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = items[position];
 
-   //         view.FindViewById<ImageView>(Resource.Id.Image).SetImageResource(items[position].meter_description.ImageResourceId);
-        //    view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = ;
+            //         view.FindViewById<ImageView>(Resource.Id.Image).SetImageResource(items[position].meter_description.ImageResourceId);
+            //    view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = ;
             return view;
         }
 
-        internal void InsertRange(List<Meter> meterList)
+        internal void InsertRange(List<string> meterList)
         {
             items.InsertRange(0, meterList);
         }

@@ -173,4 +173,16 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/textView11"
         p1:id="@+id/button1" />
+  <Button
+        p1:text="Ввести значение"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button2" />
+  <Button
+        p1:text="Статистика счетчика"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button2"
+        p1:id="@+id/historyButton" />
 </RelativeLayout>

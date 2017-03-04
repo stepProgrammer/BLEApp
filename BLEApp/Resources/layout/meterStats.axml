@@ -42,39 +42,62 @@
         p1:id="@+id/textView2"
         p1:layout_below="@+id/Text" />
     <TextView
-        p1:text="Дата"
+        p1:text="Дата:"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView3"
-        p1:layout_below="@+id/textView2" />
-    <TextView
-        p1:text="21.02.2017"
-        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_below="@+id/textView2"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginBottom="10dp" />
+    <EditText
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:layout_alignRight="@id/textView3"
-        p1:id="@+id/textView4"
-        p1:layout_toRightOf="@id/textView3" />
+        p1:editable="false"
+        p1:id="@+id/datePick"
+        p1:layout_toRightOf="@+id/textView3"
+        p1:layout_alignBaseline="@+id/textView3" />
     <TextView
         p1:text="Значение:"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView5"
-        p1:layout_below="@+id/textView3" />
+        p1:layout_below="@+id/textView3"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginBottom="10dp" />
+    <EditText
+        p1:text=""
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:numeric="integer"
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@+id/textView5"
+        p1:layout_alignRight="@+id/relativeLayout1"
+        p1:id="@+id/textView6"
+        p1:layout_alignBaseline="@+id/textView5" />
     <TextView
-        p1:text="2115"
+        p1:text="Контроллер:"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:layout_alignRight="@id/textView5"
-        p1:id="@+id/textView6"
-        p1:layout_toRightOf="@id/textView3" />
-    <Button
-        p1:text="Предыдущий"
-        p1:layout_width="wrap_content"
-        p1:layout_height="wrap_content"
+        p1:id="@+id/textView7"
         p1:layout_below="@+id/textView5"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginBottom="10dp" />
+    <EditText
+        p1:text="Гончарова Ольга"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@+id/textView7"
+        p1:layout_alignRight="@+id/relativeLayout1"
+        p1:id="@+id/textView8"
+        p1:layout_alignBaseline="@+id/textView7" />
+    <Button
+        p1:text="Сохранить"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/textView7"
         p1:id="@+id/button1" />
 </RelativeLayout>

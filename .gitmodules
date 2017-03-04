@@ -1,12 +1,4 @@
 [submodule "xamarin-android-ibeacon-service"]
 	path = xamarin-android-ibeacon-service
 	url = https://github.com/chrisriesgo/xamarin-android-ibeacon-service.git
-[submodule "yandexdisk.client"]
-	path = yandexdisk.client
-	url = https://github.com/raidenyn/yandexdisk.client.git
-[submodule "Yawful"]
-	path = Yawful
-	url = https://github.com/polycone/Yawful.git
-[submodule "MegaApiClient"]
-	path = MegaApiClient
-	url = https://github.com/gpailler/MegaApiClient.git
+

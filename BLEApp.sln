@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLEApp", "BLEApp\BLEApp.csproj", "{6E949C1E-C9A4-44E4-B442-F2F9C5DC65A9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4D6F75DD-AE89-48DD-AA52-E3283FEDDF35} = {4D6F75DD-AE89-48DD-AA52-E3283FEDDF35}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android-iBeacon-Service", "xamarin-android-ibeacon-service\Android-iBeacon-Service\Android-iBeacon-Service.csproj", "{4D6F75DD-AE89-48DD-AA52-E3283FEDDF35}"
 EndProject

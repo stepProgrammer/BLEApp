@@ -54,6 +54,20 @@ namespace BLEApp.Activities
                 SaveChangesToDb();
                 Finish();
             };
+            Button InputButton = FindViewById<Button>(Resource.Id.button2);
+            InputButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(InputStatActivity));
+                intent.PutExtra("meter", obj.meter_id);
+                StartActivity(intent);
+            };
+            Button StatButton = FindViewById<Button>(Resource.Id.historyButton);
+            StatButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(MeterHistoryActivity));
+                intent.PutExtra("meter", obj.meter_id);
+                StartActivity(intent);
+            };
         }
 
         protected void SaveChangesToDb()

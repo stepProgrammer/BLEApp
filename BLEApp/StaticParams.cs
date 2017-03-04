@@ -8,6 +8,8 @@ using BLEApp.Activities;
 namespace BLEApp
 {
     public static class StaticParams {
-        public static string DbName = "bleapp_beacons_sqlite_v13.db";
+        public static string DbName = "bleapp_beacons_sqlite_v30.db";
+        public static string ControllerNameFile = "ControllerName.txt";
+        public static string ControllerName { get; set; }
     }
 }

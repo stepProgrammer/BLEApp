@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Имя контроллера"
+        android:id="@+id/labelText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editControllerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя контроллера" />
+    <Button
+        android:text="Получить данные"
+        android:id="@+id/ButtonGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Отправить данные"
+        android:id="@+id/ButtonPush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Создать вручную"
+        android:id="@+id/ButtonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

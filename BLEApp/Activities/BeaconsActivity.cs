@@ -24,8 +24,7 @@ namespace BLEApp.Activities
     public class BeaconsActivity : Activity, IBeaconConsumer
     {
         private const string UUID = "e2c56db5-dffb-48d2-b060-d0f5a71096e0";
-        private const string monkeyId = "Monkey";
-
+    
         bool _paused=true;
         ListView listView;
         IBeaconManager _iBeaconManager;
@@ -39,7 +38,6 @@ namespace BLEApp.Activities
         List<bool> BeaconsNearbyFlagList;
         MetersAdapter itemsAdapter;
 
-        int _previousProximity;
 
         public BeaconsActivity() {
             _iBeaconManager = IBeaconManager.GetInstanceForApplication(this);
@@ -49,8 +47,8 @@ namespace BLEApp.Activities
             meterList = new List<Meter>();
             BeaconsNearbyList = new List<IBeacon>();
             BeaconsNearbyFlagList = new List<bool>();
-            _monitoringRegion = new Region(monkeyId, UUID, null, null);
-            _rangingRegion = new Region(monkeyId, UUID, null, null);
+            _monitoringRegion = new Region("stat", UUID, null, null);
+            _rangingRegion = new Region("stat", UUID, null, null);
             
 
         }
@@ -82,7 +80,7 @@ namespace BLEApp.Activities
         {
             var listView = sender as ListView;
             var t = meterList[e.Position];
-            var intent = new Intent(this, typeof(MeterActivity));
+            var intent = new Intent(this, typeof(InputStatActivity));
             intent.PutExtra("meter", t.meter_id);
             StartActivity(intent);
         }
